@@ -30,6 +30,7 @@ class User(AbstractUser):
     )
     balance = models.IntegerField(
         verbose_name='Баланс',
+        blank = True, null = True,
         default=0,
     )
 
