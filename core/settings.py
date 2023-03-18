@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # apps
     'apps.bank_users',
+    'apps.transferhistory',
 ]
 
 MIDDLEWARE = [

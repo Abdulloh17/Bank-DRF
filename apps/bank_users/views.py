@@ -1,6 +1,8 @@
 from rest_framework import mixins
 from rest_framework.viewsets import GenericViewSet
 
+
+
 from .serializers import UserSerializer, UserRegisterSerializer, User
 
 class UserApiViewSet(GenericViewSet,
@@ -14,3 +16,6 @@ class UserApiViewSet(GenericViewSet,
         if self.action in ('create' ):
             return UserRegisterSerializer
         return UserSerializer
+
+
+
